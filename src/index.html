@@ -4,10 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Malcolm In the Middle</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss" />
+    <link rel="stylesheet" href="css/header.scss" />
+    <link rel="stylesheet" href="css/portada.scss" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+    />
   </head>
   <body>
-    <h1>Malcolm In the Middle</h1>
-    <script src="./ts/index.ts"></script>
+    <header class="header">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Malcolm In The Middle" class="logo"
+      /></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="#">Portada</a></li>
+        <li><a href="#">Categoria</a></li>
+        <li><a href="#">Presentacion</a></li>
+        <li><a href="#">Enlaces</a></li>
+      </ul>
+    </header>
+
+    <main class="main-portada">
+      <div class="contenedor-portada">
+        <h1 class="titulo">Malcolm In The Middle</h1>
+        <h3 class="subtitulo">
+          Malcolm, un niño prodigio, y su vida en una familia disfuncional.
+          Malcolm tiene un coeficiente intelectual excepcionalmente alto, pero
+          vive en una casa caótica con sus padres, Lois y Hal, y sus tres
+          hermanos, Reese, Dewey y Francis.
+        </h3>
+        <img
+          src="images/family.png"
+          alt="Toda la familia de malcolm"
+          class="imagen-familia"
+        />
+      </div>
+    </main>
+    <script src="./ts/index.ts" defer></script>
   </body>
 </html>

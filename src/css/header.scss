@@ -1,0 +1,135 @@
+@import "variables";
+
+$nav-background-color: $background-color;
+$hover-color: #dcd6c8;
+
+.header {
+  background-color: $nav-background-color;
+}
+
+.logo {
+  padding-left: 1rem;
+  width: 170;
+  padding: 1rem;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: $nav-background-color;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: $main-title-color;
+  font-weight: 700;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: $hover-color;
+  border-radius: 10px;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  transform: translateY(60px - calc(58px / 2));
+}
+
+.header .menu-icon .navicon {
+  background: $main-title-color;
+  display: block;
+  height: 3px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 32px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: $main-title-color;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 10px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -10px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .logo {
+    width: 200px;
+  }
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 13px 20px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    transform: translateY(60px - calc(58px / 2));
+    padding-right: 0.5rem;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
