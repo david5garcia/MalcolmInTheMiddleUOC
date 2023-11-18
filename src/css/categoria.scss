@@ -1,0 +1,43 @@
+@import "variables";
+
+main {
+  height: auto;
+}
+
+.grid-personajes {
+  display: grid;
+  max-width: 1259px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 90%;
+}
+
+.tarjeta-personaje {
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-personaje {
+  width: 280px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.nombre-personaje {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.descripcion-personaje {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.leer-mas-enlace {
+  text-decoration: none;
+  color: $link-color;
+  font-weight: bold;
+}
