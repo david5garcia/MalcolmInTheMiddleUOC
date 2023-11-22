@@ -31,8 +31,9 @@ $hover-color: #dcd6c8;
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: $hover-color;
-  border-radius: 10px;
+  background: #333333cd;
+  color: #fdfbf7;
+  border-radius: 8px;
 }
 
 /* menu */
