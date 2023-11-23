@@ -1,4 +1,3 @@
-
 import QrCodeWithLogo from "qrcode-with-logos";
 import image from "../images/logo.png";
 

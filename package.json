@@ -1,7 +1,7 @@
 {
   "name": "malcolm",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este proyecto forma parte de la asignatura Herramientas HTML y CSS de la Universitat Oberta de Catalunya (UOC). El objetivo principal es crear una página web dedicada a la serie de televisión \"Malcolm in the Middle\".",
   "source": "src/index.html",
   "browserslist": [
     "last 2 versions",
@@ -18,13 +18,10 @@
     "build": "npm-run-all clean parcel:build"
   },
   "keywords": [],
-  "author": "",
+  "author": "davidgballester",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/packager-xml": "^2.10.3",
     "@parcel/transformer-sass": "^2.10.3",
-    "@parcel/transformer-webmanifest": "^2.10.3",
-    "@parcel/transformer-xml": "^2.10.3",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.10.3",
     "rimraf": "^5.0.5",
