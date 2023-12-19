@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll("a:not(header a)");
+  const links = document.querySelectorAll("a:not(header a):not(footer a)");
 
   links.forEach((link) => {
     link.addEventListener("click", (event: Event) => {

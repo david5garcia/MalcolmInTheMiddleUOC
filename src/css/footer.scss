@@ -1,0 +1,42 @@
+@import "variables";
+
+footer {
+  background-color: #535252;
+  color: #fff;
+  padding: 4rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+
+  > div {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: min(500px, 90%);
+    color: #fff;
+
+    .container-enlaces {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          color: $link-color;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 48em) {
+  footer {
+    > div {
+      flex-direction: row;
+    }
+  }
+}

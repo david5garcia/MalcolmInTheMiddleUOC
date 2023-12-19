@@ -1,8 +1,11 @@
+main {
+  height: auto;
+}
+
 .contenedor-presentacion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
   max-width: min(900px, 90%);
 }
 
@@ -36,5 +39,5 @@
 }
 
 .container-test {
-    text-align: center;
+  text-align: center;
 }
