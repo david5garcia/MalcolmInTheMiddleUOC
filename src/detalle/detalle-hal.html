@@ -44,7 +44,18 @@
 
     <main class="main-detalle">
       <div class="container-personaje">
-        <img src="../images/hal.png" alt="hal" />
+        <picture>
+          <source
+            srcset="../images/hal-small.png?as=webp"
+            media="(max-width: 480px)"
+          />
+          <source srcset="../images/hal.png?as=webp" />
+          <img
+            alt="Foto de hal"
+            class="imagen-personaje"
+            src="../images/hal.png"
+          />
+        </picture>
         <div class="container-info">
           <h1 class="nombre-personaje">Hal</h1>
           <div class="descripcion-personaje">

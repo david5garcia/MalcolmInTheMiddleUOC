@@ -44,7 +44,18 @@
 
     <main class="main-detalle">
       <div class="container-personaje">
-        <img src="../images/reese.png" alt="Reese" />
+        <picture>
+          <source
+            srcset="../images/reese-small.png?as=webp"
+            media="(max-width: 480px)"
+          />
+          <source srcset="../images/reese.png?as=webp" />
+          <img
+            alt="Foto de reese"
+            class="imagen-personaje"
+            src="../images/reese.png"
+          />
+        </picture>
         <div class="container-info">
           <h1 class="nombre-personaje">Reese</h1>
           <div class="descripcion-personaje">

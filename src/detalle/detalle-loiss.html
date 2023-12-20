@@ -44,7 +44,18 @@
 
     <main class="main-detalle">
       <div class="container-personaje">
-        <img src="../images/loiss.png" alt="loiss" />
+        <picture>
+          <source
+            srcset="../images/loiss-small.png?as=webp"
+            media="(max-width: 480px)"
+          />
+          <source srcset="../images/loiss.png?as=webp" />
+          <img
+            alt="Foto de loiss"
+            class="imagen-personaje"
+            src="../images/loiss.png"
+          />
+        </picture>
         <div class="container-info">
           <h1 class="nombre-personaje">Loiss</h1>
           <div class="descripcion-personaje">

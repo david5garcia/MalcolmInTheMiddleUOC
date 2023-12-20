@@ -44,7 +44,18 @@
 
     <main class="main-detalle">
       <div class="container-personaje">
-        <img src="../images/malcolm.png" alt="malcolm" />
+        <picture>
+          <source
+            srcset="../images/malcolm-small.png?as=webp"
+            media="(max-width: 480px)"
+          />
+          <source srcset="../images/malcolm.png?as=webp" />
+          <img
+            alt="Foto de malcolm"
+            class="imagen-personaje"
+            src="../images/malcolm.png?as=webp"
+          />
+        </picture>
         <div class="container-info">
           <h1 class="nombre-personaje">Malcolm</h1>
           <div class="descripcion-personaje">

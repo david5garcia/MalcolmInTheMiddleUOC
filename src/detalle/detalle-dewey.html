@@ -44,8 +44,18 @@
 
     <main class="main-detalle">
       <div class="container-personaje">
-        <img src="../images/dewey.png" alt="dewey" />
-        <div class="container-info">
+          <picture>
+            <source
+              srcset="../images/dewey-small.png?as=webp"
+              media="(max-width: 480px)"
+            />
+            <source srcset="../images/dewey.png?as=webp" />
+            <img
+              alt="Foto de dewey"
+              class="imagen-personaje"
+              src="../images/dewey.png"
+            />
+          </picture>        <div class="container-info">
           <h1 class="nombre-personaje">Dewey</h1>
           <div class="descripcion-personaje">
             <p>
