@@ -1,5 +1,5 @@
 import QrCodeWithLogo from "qrcode-with-logos";
-import image from "../images/logo.png";
+import image from "../images/logo-1x.png";
 
 const generateQRCodeWithLogo = async () => {
   const inputUrl = document.getElementById("input-url").value;

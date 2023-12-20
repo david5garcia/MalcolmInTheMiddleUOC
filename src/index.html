@@ -17,7 +17,17 @@
   <body>
     <header class="header">
       <a href="index.html">
-        <img src="images/logo.png" alt="Malcolm In The Middle" class="logo"
+        <img
+          srcset="
+            images/logo-1x.png?as=webp 1x,
+            images/logo-2x.png?as=webp 2x,
+            images/logo-3x.png?as=webp 3x
+          "
+          sizes="100vw"
+          src="images/logo-1x.png?as=webp"
+          alt="Malcolm In The Middle"
+          class="logo"
+          type="image/webp"
       /></a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"
@@ -41,18 +51,42 @@
           vive en una casa caótica con sus padres, Lois y Hal, y sus tres
           hermanos, Reese, Dewey y Francis.
         </h3>
-        <img
-          src="images/family.png"
-          alt="Toda la familia de malcolm"
-          class="imagen-familia"
-        />
+        <picture>
+          <source
+            media="(max-width: 480px)"
+            srcset="images/family-small.png?as=webp"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 481px)"
+            srcset="images/family.png?as=webp"
+            type="image/webp"
+          />
+          <img
+            src="images/family.png?as=webp"
+            alt="Toda la familia de Malcolm"
+            class="imagen-familia"
+            type="image/webp"
+          />
+        </picture>
       </div>
     </main>
 
     <footer class="footer">
       <div class="container-footer">
         <div class="container-logo">
-          <img src="images/logo.png" alt="Malcolm In The Middle" class="logo" />
+          <img
+            srcset="
+              images/logo-1x.png?as=webp 1x,
+              images/logo-2x.png?as=webp 2x,
+              images/logo-3x.png?as=webp 3x
+            "
+            sizes="100vw"
+            src="images/logo-1x.png?as=webp"
+            alt="Malcolm In The Middle"
+            class="logo"
+            type="image/webp"
+          />
         </div>
         <div class="container-enlaces">
           <a href="index.html">Portada</a>
@@ -63,7 +97,7 @@
         </div>
       </div>
     </footer>
-    
+
     <script src="./ts/index.ts" defer></script>
   </body>
 </html>
