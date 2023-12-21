@@ -45,11 +45,14 @@
     <main class="main-presentacion">
       <div class="contenedor-presentacion">
         <h1 class="titulo">Malcolm In The Middle</h1>
-        <img
-          src="images/family.png"
-          alt="Toda la familia de malcolm"
-          class="imagen-familia"
-        />
+        <picture>
+          <source
+            media="(max-width: 799px)"
+            srcset="images/family-horizontal-recortada.jpeg?as=webp"
+          />
+          <source media="(min-width: 800px)" srcset="images/family-horizontal.jpeg?as=webp" />
+          <img src="images/family-horizontal.jpeg?as=webp" alt="Toda la familia de malcolm" class="imagen-familia" />
+        </picture>
         <section>
           <p>
             Malcolm in the Middle, creada por Linwood Boomer, es una serie de
