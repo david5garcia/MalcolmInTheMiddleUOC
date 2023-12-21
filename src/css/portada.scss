@@ -32,6 +32,26 @@
   max-width: min(900px, 90%);
 }
 
+.contenedor-imagen-portada {
+  position: relative;
+
+  picture {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.imagen-corazon {
+  position: absolute;
+  mask: radial-gradient(at 70% 31%, #000 29%, #0000 30%),
+    radial-gradient(at 30% 31%, #000 29%, #0000 30%),
+    linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+  clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+  width: min(30%, 200px);
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 @keyframes slideAnimation {
   to {
@@ -39,4 +59,3 @@
     transform: translateX(0);
   }
 }
-
