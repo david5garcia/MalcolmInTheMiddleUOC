@@ -19,6 +19,10 @@
   }
 }
 
+.imagen-banner {
+  margin-bottom: 3rem;
+}
+
 .descripcion-personaje {
   font-size: small;
 }
@@ -37,6 +41,25 @@
   width: 100%;
 }
 
+.container-ahora {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+
+  picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    object-fit: cover;
+    max-width: 90%;
+    max-height: 550px;
+  }
+}
+
 .container-video {
   position: relative;
   width: 100%;
@@ -49,6 +72,14 @@
     height: 100%;
     top: 0;
     left: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container-ahora {
+    img {
+      min-width: 480px;
+    }
   }
 }
 
