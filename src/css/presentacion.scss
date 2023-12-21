@@ -48,3 +48,25 @@ main {
 .container-test {
   text-align: center;
 }
+
+.rotate-svg {
+  margin: 6rem 0 2rem 0;
+  width: min(75vw, 400px);
+  height: min(65vw, 320px);
+  animation: rotateAnimation 10s linear infinite; 
+
+  image {
+  width: min(75vw, 400px);
+  height: min(65vw, 320px);
+  }
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg); 
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
