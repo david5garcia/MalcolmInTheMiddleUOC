@@ -51,6 +51,13 @@
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: growShrink 0.7s infinite alternate; 
+}
+
+@keyframes growShrink {
+  to {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
 }
 
 @keyframes slideAnimation {
