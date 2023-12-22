@@ -111,6 +111,10 @@ $hover-color: #dcd6c8;
   top: 0;
 }
 
+.menu-label{
+  visibility: hidden;
+}
+
 // scrollbar
 
 body::-webkit-scrollbar {
