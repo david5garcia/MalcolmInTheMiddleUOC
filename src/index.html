@@ -23,7 +23,6 @@
             images/logo-2x.png?as=webp 2x,
             images/logo-3x.png?as=webp 3x
           "
-          sizes="100vw"
           src="images/logo-1x.png?as=webp"
           alt="Malcolm In The Middle"
           class="logo"
@@ -52,24 +51,17 @@
           hermanos, Reese, Dewey y Francis.
         </h3>
         <div class="contenedor-imagen-portada">
-          <picture>
-            <source
-              media="(max-width: 480px)"
-              srcset="images/family-small.png?as=webp"
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 481px)"
-              srcset="images/family.png?as=webp"
-              type="image/webp"
-            />
-            <img
-              src="images/family.png?as=webp"
-              alt="Toda la familia de Malcolm"
-              class="imagen-familia"
-              type="image/webp"
-            />
-          </picture>
+          <img
+            srcset="
+              images/family-small.png?as=webp 480w,
+              images/family.png?as=webp       718w
+            "
+            sizes="(max-width: 600px) 90vw, 700px"
+            src="images/family.png?as=webp"
+            alt="Toda la familia de Malcolm"
+            class="imagen-familia"
+            type="image/webp"
+          />
           <img
             class="imagen-corazon"
             src="images/best-show.jpeg?as=webp"
@@ -88,7 +80,6 @@
               images/logo-2x.png?as=webp 2x,
               images/logo-3x.png?as=webp 3x
             "
-            sizes="100vw"
             src="images/logo-1x.png?as=webp"
             alt="Malcolm In The Middle"
             class="logo"

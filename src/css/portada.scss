@@ -1,5 +1,5 @@
 .imagen-familia {
-  width: min(90%, 600px);
+  width: min(90%, 700px);
   margin-top: 2rem;
   opacity: 0;
   transform: translateX(-100%);
@@ -35,10 +35,8 @@
 .contenedor-imagen-portada {
   position: relative;
 
-  picture {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
 }
 
 .imagen-corazon {
@@ -51,7 +49,7 @@
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: growShrink 0.7s infinite alternate; 
+  animation: growShrink 0.7s infinite alternate;
 }
 
 @keyframes growShrink {
