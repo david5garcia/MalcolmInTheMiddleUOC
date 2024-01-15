@@ -125,7 +125,9 @@
       <div class="container-momento">
         <h2 class="titulo-momento">Momento más gracioso</h2>
         <div class="container-video">
-          <button id="iframe-button">Cargar Video</button>
+          <button id="iframe-button" video-src="aVevO6OlcKk">
+            Cargar Video
+          </button>
           <div id="iframeContainer" class="container-video"></div>
         </div>
       </div>
@@ -163,10 +165,11 @@
         var iframeContainer = document.getElementById("iframeContainer");
 
         cargarVideoBtn.addEventListener("click", function () {
+          const videoSrc = cargarVideoBtn.getAttribute("video-src");
           var iframe = document.createElement("iframe");
           iframe.width = "560";
           iframe.height = "315";
-          iframe.src = "https://www.youtube.com/embed/aVevO6OlcKk";
+          iframe.src = "https://www.youtube.com/embed/" + videoSrc;
           iframe.title = "YouTube video player";
           iframe.frameborder = "0";
           iframe.allow =
