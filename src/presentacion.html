@@ -173,10 +173,31 @@
         <section class="container-mejores-momentos">
           <h2>Mejores momentos</h2>
           <div id="iframeContainer1" class="container-video"></div>
+          <button
+            onclick="loadIframe('dWTlRPrHX4E?si=VuBTebRq60WbfDPe', 'iframeContainer1')"
+          >
+            Cargar Video 1
+          </button>
           <div id="iframeContainer2" class="container-video"></div>
+          <button
+            onclick="loadIframe('fTZIGf0Qqjc?si=eyVeSD_Vv7AZI45U', 'iframeContainer2')"
+          >
+            Cargar Video 2
+          </button>
           <div id="iframeContainer3" class="container-video"></div>
+          <button
+            onclick="loadIframe('nRahunVV5Fo?si=0AquI4PosJE1xm0z', 'iframeContainer3')"
+          >
+            Cargar Video 3
+          </button>
           <div id="iframeContainer4" class="container-video"></div>
+          <button onclick="loadIframe('n0eQM9VHpVw', 'iframeContainer4')">
+            Cargar Video 4
+          </button>
           <div id="iframeContainer5" class="container-video"></div>
+          <button onclick="loadIframe('fv_P3ph3wl8', 'iframeContainer5')">
+            Cargar Video 5
+          </button>
         </section>
       </div>
     </main>
@@ -223,15 +244,6 @@
         // Agrega el iframe al contenedor
         iframeContainer.appendChild(iframe);
       }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        // Llama a loadIframe con los parámetros apropiados para cargar el contenido de los iframes
-        loadIframe("dWTlRPrHX4E?si=VuBTebRq60WbfDPe", "iframeContainer1");
-        loadIframe("fTZIGf0Qqjc?si=eyVeSD_Vv7AZI45U", "iframeContainer2");
-        loadIframe("nRahunVV5Fo?si=0AquI4PosJE1xm0z", "iframeContainer3");
-        loadIframe("n0eQM9VHpVw", "iframeContainer4");
-        loadIframe("fv_P3ph3wl8", "iframeContainer5");
-      });
     </script>
   </body>
 </html>
