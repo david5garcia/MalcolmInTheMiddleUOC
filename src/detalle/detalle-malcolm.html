@@ -126,17 +126,7 @@
       <div class="container-momento">
         <h2 class="titulo-momento">Momento más gracioso</h2>
         <div class="container-video">
-          <iframe
-            loading="lazy"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/aVevO6OlcKk"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            defer
-          ></iframe>
+          <div id="iframeContainer"></div>
         </div>
       </div>
     </main>
@@ -167,5 +157,25 @@
       </div>
     </footer>
     <script src="../ts/index.ts" async></script>
+    <script>
+      function loadIframe() {
+        var iframeContainer = document.getElementById("iframeContainer");
+
+        var iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src =
+          "https://www.youtube.com/embed/8Oi0fEThfDE?si=ZwCk_dyg5u7VHA3s";
+        iframe.title = "YouTube video player";
+        iframe.frameborder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowfullscreen = true;
+
+        iframeContainer.appendChild(iframe);
+      }
+
+      window.onload = loadIframe;
+    </script>
   </body>
 </html>
