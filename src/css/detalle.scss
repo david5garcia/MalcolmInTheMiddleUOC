@@ -1,3 +1,5 @@
+@import "variables";
+
 .main-detalle {
   height: auto;
 }
@@ -65,6 +67,7 @@
   width: 100%;
   height: 0;
   padding-bottom: 56.25%; /* 16:9 */
+  text-align: center;
 
   iframe {
     position: absolute;
@@ -72,6 +75,18 @@
     height: 100%;
     top: 0;
     left: 0;
+  }
+
+  button {
+    margin: 1rem 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    background-color: $link-color;
   }
 }
 

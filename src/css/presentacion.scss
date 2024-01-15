@@ -1,3 +1,5 @@
+@import "variables";
+
 main {
   height: auto;
 }
@@ -43,6 +45,18 @@ main {
   padding: 2rem 0;
   width: 100%;
   gap: 1rem;
+
+  button {
+    margin: 1rem 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    background-color: $link-color;
+  }
 }
 
 .container-test {
@@ -53,20 +67,19 @@ main {
   margin: 6rem 0 2rem 0;
   width: min(75vw, 400px);
   height: min(65vw, 320px);
-  animation: rotateAnimation 10s linear infinite; 
+  animation: rotateAnimation 10s linear infinite;
 
   image {
-  width: min(75vw, 400px);
-  height: min(65vw, 320px);
+    width: min(75vw, 400px);
+    height: min(65vw, 320px);
   }
 }
 
 @keyframes rotateAnimation {
   from {
-    transform: rotate(0deg); 
+    transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
 }
-
