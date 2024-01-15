@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/header.scss" />
     <link rel="stylesheet" href="../css/footer.scss" />
     <link rel="stylesheet" href="../css/detalle.scss" />
-
     <link rel="shortcut icon" href="../images/favicon.ico" />
   </head>
   <body>
@@ -121,15 +120,12 @@
       <div class="container-momento">
         <h2 class="titulo-momento">Momento más gracioso</h2>
         <div class="container-video">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/8Oi0fEThfDE?si=ZwCk_dyg5u7VHA3s"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <div id="iframeContainer" class="container-video"></div>
+          <button
+            onclick="loadIframe('8Oi0fEThfDE?si=ZwCk_dyg5u7VHA3s', 'iframeContainer')"
+          >
+            Cargar Video
+          </button>
         </div>
       </div>
     </main>
@@ -160,5 +156,6 @@
       </div>
     </footer>
     <script src="../ts/index.ts" async></script>
+    <script src="../js/utils.js" async></script>
   </body>
 </html>
