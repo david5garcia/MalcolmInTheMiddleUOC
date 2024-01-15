@@ -173,51 +173,11 @@
         </section>
         <section class="container-mejores-momentos">
           <h2>Mejores momentos</h2>
-          <div class="container-video">
-            <iframe
-              src="https://www.youtube.com/embed/dWTlRPrHX4E?si=VuBTebRq60WbfDPe"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="container-video">
-            <iframe
-              src="https://www.youtube.com/embed/fTZIGf0Qqjc?si=eyVeSD_Vv7AZI45U"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="container-video">
-            <iframe
-              src="https://www.youtube.com/embed/nRahunVV5Fo?si=0AquI4PosJE1xm0z"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="container-video">
-            <iframe
-              src="https://www.youtube.com/embed/n0eQM9VHpVw"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="container-video">
-            <iframe
-              src="https://www.youtube.com/embed/fv_P3ph3wl8"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
+          <div id="iframeContainer1" class="container-video"></div>
+          <div id="iframeContainer2" class="container-video"></div>
+          <div id="iframeContainer3" class="container-video"></div>
+          <div id="iframeContainer4" class="container-video"></div>
+          <div id="iframeContainer5" class="container-video"></div>
         </section>
       </div>
     </main>
@@ -247,5 +207,32 @@
       </div>
     </footer>
     <script src="./ts/index.ts" async></script>
+    <script>
+      function loadIframe(videoId, containerId) {
+        var iframeContainer = document.getElementById(containerId);
+
+        var iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = "https://www.youtube.com/embed/" + videoId;
+        iframe.title = "YouTube video player";
+        iframe.frameborder = "0";
+        iframe.allow =
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowfullscreen = true;
+
+        // Agrega el iframe al contenedor
+        iframeContainer.appendChild(iframe);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Llama a loadIframe con los parámetros apropiados para cargar el contenido de los iframes
+        loadIframe("dWTlRPrHX4E?si=VuBTebRq60WbfDPe", "iframeContainer1");
+        loadIframe("fTZIGf0Qqjc?si=eyVeSD_Vv7AZI45U", "iframeContainer2");
+        loadIframe("nRahunVV5Fo?si=0AquI4PosJE1xm0z", "iframeContainer3");
+        loadIframe("n0eQM9VHpVw", "iframeContainer4");
+        loadIframe("fv_P3ph3wl8", "iframeContainer5");
+      });
+    </script>
   </body>
 </html>
