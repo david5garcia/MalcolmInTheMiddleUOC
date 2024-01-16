@@ -172,32 +172,42 @@
         </section>
         <section class="container-mejores-momentos">
           <h2>Mejores momentos</h2>
-          <div id="iframeContainer1" class="container-video"></div>
           <button
-            onclick="loadIframe('dWTlRPrHX4E?si=VuBTebRq60WbfDPe', 'iframeContainer1')"
+            iframe-container="iframeContainer"
+            class="iframe-button"
+            video-src="dWTlRPrHX4E?si=VuBTebRq60WbfDPe"
           >
             Cargar Video 1
           </button>
-          <div id="iframeContainer2" class="container-video"></div>
           <button
-            onclick="loadIframe('fTZIGf0Qqjc?si=eyVeSD_Vv7AZI45U', 'iframeContainer2')"
+            iframe-container="iframeContainer"
+            class="iframe-button"
+            video-src="fTZIGf0Qqjc?si=eyVeSD_Vv7AZI45U"
           >
             Cargar Video 2
           </button>
-          <div id="iframeContainer3" class="container-video"></div>
           <button
-            onclick="loadIframe('nRahunVV5Fo?si=0AquI4PosJE1xm0z', 'iframeContainer3')"
+            iframe-container="iframeContainer"
+            class="iframe-button"
+            video-src="nRahunVV5Fo?si=0AquI4PosJE1xm0z"
           >
             Cargar Video 3
           </button>
-          <div id="iframeContainer4" class="container-video"></div>
-          <button onclick="loadIframe('n0eQM9VHpVw', 'iframeContainer4')">
+          <button
+            iframe-container="iframeContainer"
+            class="iframe-button"
+            video-src="n0eQM9VHpVw"
+          >
             Cargar Video 4
           </button>
-          <div id="iframeContainer5" class="container-video"></div>
-          <button onclick="loadIframe('fv_P3ph3wl8', 'iframeContainer5')">
+          <button
+            iframe-container="iframeContainer"
+            class="iframe-button"
+            video-src="fv_P3ph3wl8"
+          >
             Cargar Video 5
           </button>
+          <div id="iframeContainer" class="container-video"></div>
         </section>
       </div>
     </main>
@@ -227,6 +237,6 @@
       </div>
     </footer>
     <script src="./ts/index.ts" async></script>
-    <script src="./js/utils.js" async></script>
+    <script src="./js/utils.js" defer></script>
   </body>
 </html>

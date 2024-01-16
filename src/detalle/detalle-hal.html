@@ -123,7 +123,13 @@
       <div class="container-momento">
         <h2 class="titulo-momento">Momento más gracioso</h2>
         <div class="container-video">
-          <button id="iframe-button" video-src="Oy9ceTxGYCw">Cargar Video</button>
+          <button
+            iframe-container="iframeContainer"
+            class="iframe-button"
+            video-src="Oy9ceTxGYCw"
+          >
+            Cargar Video
+          </button>
           <div id="iframeContainer" class="container-video"></div>
         </div>
       </div>
@@ -155,6 +161,6 @@
       </div>
     </footer>
     <script src="../ts/index.ts" async></script>
-    <script src="../js/utils.js" async></script>
+    <script src="../js/utils.js" defer></script>
   </body>
 </html>
